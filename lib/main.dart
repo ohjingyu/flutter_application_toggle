@@ -25,11 +25,7 @@ class _MyAppState extends State<MyApp> {
               MaterialButton(
                 onPressed: () {
                   setState(() {
-                    if (isVisible == false) {
-                      isVisible = true;
-                    } else {
-                      isVisible = false;
-                    }
+                    isVisible = !isVisible;
                   });
                 },
                 child: Text(
